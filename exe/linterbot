@@ -1,0 +1,51 @@
+#!/usr/bin/env ruby
+
+if Gem::Specification::find_all_by_name('bundler').any?
+  require 'bundler/setup'
+else
+  require 'rubygems'
+  gem 'linterbot'
+end
+
+require 'commander/import'
+require 'linterbot'
+
+PROGRAM_NAME = 'linterbot'
+DEFAULT_DRY_RUN = false
+
+program :name, PROGRAM_NAME
+program :version, Linterbot::VERSION
+program :description, Linterbot::DESCRIPTION
+default_command :run
+
+def error(message, command)
+  STDERR.puts "Error: #{message}"
+  STDERR.puts "Run 'linterbot help #{command}' for more information."
+  exit 1
+end
+
+command :run do |c|
+  c.syntax = "#{PROGRAM_NAME} run <repository> <pull_request_number> [options]"
+  c.description = 'Analyzes a GitHub pull request for linter violations.'
+  c.option '-p', '--project-base-path PROJECT_BASE_PATH', String, "Sets the project's base path. Default '#{Linterbot::RunnerConfiguration::DEFAULT_PROJECT_BASE_PATH}'."
+  c.option '-c', '--config-file-path', "Sets the config file path. Default '#{Linterbot::RunnerConfiguration::DEFAULT_CONFIG_FILE_PATH}'"
+  c.option '-x', '--dry-run', "Executes bot without modifing GitHub's pull request, Default '#{DEFAULT_DRY_RUN}'"
+  c.option '-f', '--linter-report-file-path LINTER_REPORT_FILE_PATH', String, "Sets the linter report to be used. Default stdin."
+  c.action do |args, options|
+    options.default :'dry-run' => DEFAULT_DRY_RUN
+    repository, pull_request_number = *args.take(2)
+
+    error("You must provide the name of the repository.", "run") unless repository
+    error("You must provide the pull request number.", "run") unless pull_request_number
+
+    begin
+      configuration = Linterbot::RunnerConfiguration.configuration!(options)
+      runner = Linterbot::Runner.new(configuration)
+      runner.run(repository, pull_request_number)
+    rescue Linterbot::RunnerConfiguration::MissingAttribute => exception
+      STDERR.puts "Missing configuration attribute '#{exception.attribute_name}'"
+      STDERR.puts "#{exception.fix_description}"
+      exit 1
+    end
+  end
+end

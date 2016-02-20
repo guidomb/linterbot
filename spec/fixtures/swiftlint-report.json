@@ -1,0 +1,848 @@
+[
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/SMOTrackerBridge\/BatteryLevelEventBus.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 65,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/SMOTrackerBridge\/BatteryService.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 43,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "There should be no space before and one after any comma.",
+    "character" : 41,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/SMOTrackerBridge\/SMOSkateSessionRecorder.swift",
+    "rule_id" : "comma",
+    "line" : 53,
+    "severity" : "Warning",
+    "type" : "Comma Spacing"
+  },
+  {
+    "reason" : "There should be no space before and one after any comma.",
+    "character" : 41,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/SMOTrackerBridge\/SMOSkateSessionRecorder.swift",
+    "rule_id" : "comma",
+    "line" : 61,
+    "severity" : "Warning",
+    "type" : "Comma Spacing"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/SMOTrackerBridgeTests\/BatteryLevelEventBusSpec.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 46,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Function should have complexity 10 or less: currently complexity equals 14",
+    "character" : 14,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/SMOTrackerBridgeTests\/TrackerEventBusSpec.swift",
+    "rule_id" : "cyclomatic_complexity",
+    "line" : 18,
+    "severity" : "Warning",
+    "type" : "Cyclomatic Complexity"
+  },
+  {
+    "reason" : "Function body should span 30 lines or less excluding comments and whitespace: currently spans 120 lines",
+    "character" : 5,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/AppDelegate.swift",
+    "rule_id" : "function_body_length",
+    "line" : 62,
+    "severity" : "Warning",
+    "type" : "Function Body Length"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/BatteryMetricsBootstrapper.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 25,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "TODOs and FIXMEs should be avoided.",
+    "character" : 12,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/Bootstrappers\/LocalWebServerBootstrapper.swift",
+    "rule_id" : "todo",
+    "line" : 27,
+    "severity" : "Warning",
+    "type" : "Todo"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/Bootstrappers\/TrickPersistorBootstrapper.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 29,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Operators should be surrounded by a single whitespace when defining them.",
+    "character" : 8,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/Extensions\/ArrayExtension.swift",
+    "rule_id" : "operator_whitespace",
+    "line" : 10,
+    "severity" : "Warning",
+    "type" : "Operator Function Whitespace"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/Extensions\/NSDataExtension.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 27,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Documented declarations should be valid.",
+    "character" : 5,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/Extensions\/NSTimerExtension.swift",
+    "rule_id" : "valid_docs",
+    "line" : 21,
+    "severity" : "Warning",
+    "type" : "Valid Docs"
+  },
+  {
+    "reason" : "Documented declarations should be valid.",
+    "character" : 5,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/Extensions\/NSTimerExtension.swift",
+    "rule_id" : "valid_docs",
+    "line" : 36,
+    "severity" : "Warning",
+    "type" : "Valid Docs"
+  },
+  {
+    "reason" : "Documented declarations should be valid.",
+    "character" : 5,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/Extensions\/NSTimerExtension.swift",
+    "rule_id" : "valid_docs",
+    "line" : 47,
+    "severity" : "Warning",
+    "type" : "Valid Docs"
+  },
+  {
+    "reason" : "Swift constructors are preferred over legacy convenience functions.",
+    "character" : 70,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/Extensions\/StringExtension.swift",
+    "rule_id" : "legacy_constructor",
+    "line" : 20,
+    "severity" : "Warning",
+    "type" : "Legacy Constructor"
+  },
+  {
+    "reason" : "Documented declarations should be valid.",
+    "character" : 12,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/Extensions\/StringExtension.swift",
+    "rule_id" : "valid_docs",
+    "line" : 49,
+    "severity" : "Warning",
+    "type" : "Valid Docs"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/LocalNotificationBootstrapper.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 53,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Function should have 5 parameters or less: it currently has 7",
+    "character" : 12,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/Models\/SkateSession.swift",
+    "rule_id" : "function_parameter_count",
+    "line" : 32,
+    "severity" : "Warning",
+    "type" : "Function Parameter Count"
+  },
+  {
+    "reason" : "Function should have 5 parameters or less: it currently has 8",
+    "character" : 12,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/Models\/SkateTrick.swift",
+    "rule_id" : "function_parameter_count",
+    "line" : 22,
+    "severity" : "Warning",
+    "type" : "Function Parameter Count"
+  },
+  {
+    "reason" : "Function should have 5 parameters or less: it currently has 8",
+    "character" : 12,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/Models\/SkateTrick.swift",
+    "rule_id" : "function_parameter_count",
+    "line" : 41,
+    "severity" : "Warning",
+    "type" : "Function Parameter Count"
+  },
+  {
+    "reason" : "Function should have 5 parameters or less: it currently has 8",
+    "character" : 12,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/Models\/SkateTrick.swift",
+    "rule_id" : "function_parameter_count",
+    "line" : 45,
+    "severity" : "Warning",
+    "type" : "Function Parameter Count"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/Repositories\/Local\/LocalFileSystemManager.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 42,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Operators should be surrounded by a single whitespace when defining them.",
+    "character" : 8,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/Repositories\/Local\/LocalFileSystemManager.swift",
+    "rule_id" : "operator_whitespace",
+    "line" : 12,
+    "severity" : "Warning",
+    "type" : "Operator Function Whitespace"
+  },
+  {
+    "reason" : "Function should have 5 parameters or less: it currently has 7",
+    "character" : 13,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/Repositories\/Parse\/PFObject\/SkateSession+PFObject.swift",
+    "rule_id" : "function_parameter_count",
+    "line" : 29,
+    "severity" : "Warning",
+    "type" : "Function Parameter Count"
+  },
+  {
+    "reason" : "Function should have 5 parameters or less: it currently has 7",
+    "character" : 13,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/Repositories\/Parse\/PFObject\/SkateTrick+PFObject.swift",
+    "rule_id" : "function_parameter_count",
+    "line" : 41,
+    "severity" : "Warning",
+    "type" : "Function Parameter Count"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/Repositories\/TrickSensorDataRepository.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 17,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/Services\/BatteryMetricsService.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 26,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/Services\/CounterService.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 49,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/Services\/GeoTaggedSkateSessionRecorder.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 60,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "TODOs and FIXMEs should be avoided.",
+    "character" : 24,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/Services\/ReplayableSkateSessionRecorder.swift",
+    "rule_id" : "todo",
+    "line" : 99,
+    "severity" : "Warning",
+    "type" : "Todo"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/Services\/TrickPersistor.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 58,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Opening braces should be preceded by a single space and on the same line as the declaration.",
+    "character" : 103,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/Services\/TrickPersistor.swift",
+    "rule_id" : "opening_brace",
+    "line" : 38,
+    "severity" : "Warning",
+    "type" : "Opening Brace Spacing"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/DeveloperSettings\/DeveloperSettingsView.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 50,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/DeveloperSettings\/DeveloperSettingsViewController.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 209,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/DeveloperSettings\/LoggerViewController.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 39,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/DeveloperSettingsService.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 85,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/NavigationController.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 26,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/OnBoarding\/AvailableTrackers\/AvailableTrackersCell\/AvailableTrackerCell.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 33,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/OnBoarding\/AvailableTrackers\/AvailableTrackersCell\/AvailableTrackerCellViewModel.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 23,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/OnBoarding\/AvailableTrackers\/AvailableTrackersView.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 60,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/OnBoarding\/AvailableTrackers\/AvailableTrackersViewModel.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 63,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/OnBoarding\/ChargeBattery\/ChargeBatteryViewController.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 75,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/OnBoarding\/TurningOnTracker\/TurningOnTrackerController.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 82,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/OnBoarding\/Welcome\/WelcomeView.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 66,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/OnBoarding\/Welcome\/WelcomeViewModel.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 35,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/RecordTrick\/RecordTrickController.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 415,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "File should contain 400 lines or less: currently contains 415",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/RecordTrick\/RecordTrickController.swift",
+    "rule_id" : "file_length",
+    "line" : 415,
+    "severity" : "Warning",
+    "type" : "File Line Length"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/RecordTrick\/RecordTrickStatsViewModel.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 75,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Function body should span 30 lines or less excluding comments and whitespace: currently spans 50 lines",
+    "character" : 12,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/RecordTrick\/RecordTrickViewModel.swift",
+    "rule_id" : "function_body_length",
+    "line" : 88,
+    "severity" : "Warning",
+    "type" : "Function Body Length"
+  },
+  {
+    "reason" : "Struct-scoped constants are preferred over legacy global constants.",
+    "character" : 27,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/Session\/SessionDetail\/SessionDetailNavigationTitle.swift",
+    "rule_id" : "legacy_constant",
+    "line" : 25,
+    "severity" : "Warning",
+    "type" : "Legacy Constant"
+  },
+  {
+    "reason" : "Swift constructors are preferred over legacy convenience functions.",
+    "character" : 53,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/Session\/SessionDetail\/SessionDetailNavigationTitle.swift",
+    "rule_id" : "legacy_constructor",
+    "line" : 45,
+    "severity" : "Warning",
+    "type" : "Legacy Constructor"
+  },
+  {
+    "reason" : "Swift constructors are preferred over legacy convenience functions.",
+    "character" : 56,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/Session\/SessionDetail\/SessionDetailNavigationTitle.swift",
+    "rule_id" : "legacy_constructor",
+    "line" : 46,
+    "severity" : "Warning",
+    "type" : "Legacy Constructor"
+  },
+  {
+    "reason" : "Lines should not have trailing semicolons.",
+    "character" : 48,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/Session\/SessionDetail\/SessionDetailViewModel.swift",
+    "rule_id" : "trailing_semicolon",
+    "line" : 87,
+    "severity" : "Warning",
+    "type" : "Trailing Semicolon"
+  },
+  {
+    "reason" : "Lines should not have trailing semicolons.",
+    "character" : 48,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/Session\/SessionDetail\/SessionTrickList\/Cells\/SessionTrickViewModel.swift",
+    "rule_id" : "trailing_semicolon",
+    "line" : 105,
+    "severity" : "Warning",
+    "type" : "Trailing Semicolon"
+  },
+  {
+    "reason" : "Struct-scoped constants are preferred over legacy global constants.",
+    "character" : 24,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/Session\/SessionTrickAnalizer\/SessionTrickAnalizerViewController.swift",
+    "rule_id" : "legacy_constant",
+    "line" : 155,
+    "severity" : "Warning",
+    "type" : "Legacy Constant"
+  },
+  {
+    "reason" : "Swift constructors are preferred over legacy convenience functions.",
+    "character" : 26,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/TrackerButton.swift",
+    "rule_id" : "legacy_constructor",
+    "line" : 15,
+    "severity" : "Warning",
+    "type" : "Legacy Constructor"
+  },
+  {
+    "reason" : "Documented declarations should be valid.",
+    "character" : 13,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/TrackerSettings\/AddTracker\/AddTrackerCell\/TrackerPickerViewModel.swift",
+    "rule_id" : "valid_docs",
+    "line" : 75,
+    "severity" : "Warning",
+    "type" : "Valid Docs"
+  },
+  {
+    "reason" : "Function body should span 30 lines or less excluding comments and whitespace: currently spans 34 lines",
+    "character" : 12,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/TrackerSettings\/AddTracker\/AddTrackerViewModel.swift",
+    "rule_id" : "function_body_length",
+    "line" : 58,
+    "severity" : "Warning",
+    "type" : "Function Body Length"
+  },
+  {
+    "reason" : "Closing brace with closing parenthesis should not have any whitespaces in the middle.",
+    "character" : 21,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/TrackerSettings\/AddTracker\/AddTrackerViewModel.swift",
+    "rule_id" : "closing_brace",
+    "line" : 79,
+    "severity" : "Warning",
+    "type" : "Closing Brace Spacing"
+  },
+  {
+    "reason" : "Swift constructors are preferred over legacy convenience functions.",
+    "character" : 39,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/TrackerSettings\/TrackerCell\/PairedTrackerCell.swift",
+    "rule_id" : "legacy_constructor",
+    "line" : 68,
+    "severity" : "Warning",
+    "type" : "Legacy Constructor"
+  },
+  {
+    "reason" : "Swift constructors are preferred over legacy convenience functions.",
+    "character" : 42,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/TrackerSettings\/TrackerCell\/PairedTrackerCell.swift",
+    "rule_id" : "legacy_constructor",
+    "line" : 70,
+    "severity" : "Warning",
+    "type" : "Legacy Constructor"
+  },
+  {
+    "reason" : "Swift constructors are preferred over legacy convenience functions.",
+    "character" : 40,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIComponents\/TrackerSettings\/TrackerSettingsController.swift",
+    "rule_id" : "legacy_constructor",
+    "line" : 86,
+    "severity" : "Warning",
+    "type" : "Legacy Constructor"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIExtensions\/UIDeviceExtension.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 17,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Swift constructors are preferred over legacy convenience functions.",
+    "character" : 38,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIExtensions\/UIImageExtension.swift",
+    "rule_id" : "legacy_constructor",
+    "line" : 63,
+    "severity" : "Warning",
+    "type" : "Legacy Constructor"
+  },
+  {
+    "reason" : "Swift constructors are preferred over legacy convenience functions.",
+    "character" : 36,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIExtensions\/UIImageExtension.swift",
+    "rule_id" : "legacy_constructor",
+    "line" : 64,
+    "severity" : "Warning",
+    "type" : "Legacy Constructor"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIExtensions\/UINavigationItemExtension.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 15,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Swift constructors are preferred over legacy convenience functions.",
+    "character" : 23,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIExtensions\/UITabBarExtension.swift",
+    "rule_id" : "legacy_constructor",
+    "line" : 31,
+    "severity" : "Warning",
+    "type" : "Legacy Constructor"
+  },
+  {
+    "reason" : "Swift constructors are preferred over legacy convenience functions.",
+    "character" : 38,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIExtensions\/UITabBarExtension.swift",
+    "rule_id" : "legacy_constructor",
+    "line" : 33,
+    "severity" : "Warning",
+    "type" : "Legacy Constructor"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIExtensions\/UITextViewExtension.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 18,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Swift constructors are preferred over legacy convenience functions.",
+    "character" : 40,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIExtensions\/UIViewExtension.swift",
+    "rule_id" : "legacy_constructor",
+    "line" : 24,
+    "severity" : "Warning",
+    "type" : "Legacy Constructor"
+  },
+  {
+    "reason" : "Swift constructors are preferred over legacy convenience functions.",
+    "character" : 40,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIExtensions\/UIViewExtension.swift",
+    "rule_id" : "legacy_constructor",
+    "line" : 30,
+    "severity" : "Warning",
+    "type" : "Legacy Constructor"
+  },
+  {
+    "reason" : "Swift constructors are preferred over legacy convenience functions.",
+    "character" : 40,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIExtensions\/UIViewExtension.swift",
+    "rule_id" : "legacy_constructor",
+    "line" : 37,
+    "severity" : "Warning",
+    "type" : "Legacy Constructor"
+  },
+  {
+    "reason" : "Swift constructors are preferred over legacy convenience functions.",
+    "character" : 40,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIExtensions\/UIViewExtension.swift",
+    "rule_id" : "legacy_constructor",
+    "line" : 43,
+    "severity" : "Warning",
+    "type" : "Legacy Constructor"
+  },
+  {
+    "reason" : "Documented declarations should be valid.",
+    "character" : 5,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/UIExtensions\/UIViewExtension.swift",
+    "rule_id" : "valid_docs",
+    "line" : 53,
+    "severity" : "Warning",
+    "type" : "Valid Docs"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/VirtualComponents\/VirtualBatteryService.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 42,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/Syrmo\/VirtualComponents\/VirtualSkateRecorder.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 137,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/SyrmoTests\/Extensions\/StringExtensionSpec.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 34,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/SyrmoTests\/Mocks\/Services\/MockApplicationState.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 26,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/SyrmoTests\/Mocks\/Services\/MockBatteryService.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 34,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Closing brace with closing parenthesis should not have any whitespaces in the middle.",
+    "character" : 118,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/SyrmoTests\/Services\/SkateSessionBuilderSpec.swift",
+    "rule_id" : "closing_brace",
+    "line" : 51,
+    "severity" : "Warning",
+    "type" : "Closing Brace Spacing"
+  },
+  {
+    "reason" : "Closing brace with closing parenthesis should not have any whitespaces in the middle.",
+    "character" : 118,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/SyrmoTests\/Services\/SkateSessionBuilderSpec.swift",
+    "rule_id" : "closing_brace",
+    "line" : 52,
+    "severity" : "Warning",
+    "type" : "Closing Brace Spacing"
+  },
+  {
+    "reason" : "Closing brace with closing parenthesis should not have any whitespaces in the middle.",
+    "character" : 91,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/SyrmoTests\/Services\/SkateSessionBuilderSpec.swift",
+    "rule_id" : "closing_brace",
+    "line" : 70,
+    "severity" : "Warning",
+    "type" : "Closing Brace Spacing"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/SyrmoTests\/Services\/TrackerConnectionLostNotificationServiceSpec.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 95,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Type name should be between 3 and 40 characters long: 'TrackerConnectionLostNotificationServiceSpec'",
+    "character" : 14,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/SyrmoTests\/Services\/TrackerConnectionLostNotificationServiceSpec.swift",
+    "rule_id" : "type_name",
+    "line" : 15,
+    "severity" : "Warning",
+    "type" : "Type Name"
+  },
+  {
+    "reason" : "Function body should span 30 lines or less excluding comments and whitespace: currently spans 40 lines",
+    "character" : 21,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/SyrmoTests\/Services\/TrackerConnectionLostNotificationServiceSpec.swift",
+    "rule_id" : "function_body_length",
+    "line" : 17,
+    "severity" : "Warning",
+    "type" : "Function Body Length"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/SyrmoTests\/UIComponents\/OnBoarding\/AvailableTrackers\/AvailableTrackersViewModelSpec.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 78,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Function body should span 30 lines or less excluding comments and whitespace: currently spans 34 lines",
+    "character" : 21,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/SyrmoTests\/UIComponents\/OnBoarding\/AvailableTrackers\/AvailableTrackersViewModelSpec.swift",
+    "rule_id" : "function_body_length",
+    "line" : 16,
+    "severity" : "Warning",
+    "type" : "Function Body Length"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/SyrmoTests\/UIComponents\/RecordTrick\/RecordTrickViewModelSpec.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 603,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "File should contain 400 lines or less: currently contains 603",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/SyrmoTests\/UIComponents\/RecordTrick\/RecordTrickViewModelSpec.swift",
+    "rule_id" : "file_length",
+    "line" : 603,
+    "severity" : "Warning",
+    "type" : "File Line Length"
+  },
+  {
+    "reason" : "Files should have a single trailing newline.",
+    "character" : null,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/ViewModel\/BindingAnalyzer.swift",
+    "rule_id" : "trailing_newline",
+    "line" : 102,
+    "severity" : "Warning",
+    "type" : "Trailing Newline"
+  },
+  {
+    "reason" : "Opening braces should be preceded by a single space and on the same line as the declaration.",
+    "character" : 40,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/ViewModel\/BindingAnalyzer.swift",
+    "rule_id" : "opening_brace",
+    "line" : 49,
+    "severity" : "Warning",
+    "type" : "Opening Brace Spacing"
+  },
+  {
+    "reason" : "TODOs and FIXMEs should be avoided.",
+    "character" : 4,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/ViewModel\/Extensions\/LazyProperties.swift",
+    "rule_id" : "todo",
+    "line" : 12,
+    "severity" : "Warning",
+    "type" : "Todo"
+  },
+  {
+    "reason" : "TODOs and FIXMEs should be avoided.",
+    "character" : 8,
+    "file" : "\/Users\/guidomb\/Documents\/projects\/syrmo\/syrmo-ios\/ViewModel\/Extensions\/UIKit+ReactiveCocoa.swift",
+    "rule_id" : "todo",
+    "line" : 62,
+    "severity" : "Warning",
+    "type" : "Todo"
+  }
+]
