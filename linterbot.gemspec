@@ -11,7 +11,11 @@ Gem::Specification.new do |spec|
   spec.email         = ["guidomb@gmail.com"]
 
   spec.summary       = Linterbot::DESCRIPTION
-  spec.description   = Linterbot::DESCRIPTION
+  spec.description   = %q{
+    A bot that parses swiftlint output and analyzes a GitHub pull request.
+    Then for each linter violation it will make comment in the pull request diff on the
+    line where the violation was made.
+  }
   spec.homepage      = "https://github.com/guidomb/linterbot"
   spec.license       = "MIT"
 
