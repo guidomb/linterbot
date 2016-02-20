@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/linterbot.svg)](https://badge.fury.io/rb/linterbot)
 
-A bot that parses swiftlint output and analyzes a GitHub pull request. Then for each linter violation it will make comment in the pull request diff on the line where the violation was made.
+A bot that parses [SwiftLint](https://github.com/realm/SwiftLint) output and analyzes a GitHub pull request. Then for each linter violation it will make comment in the pull request diff on the line where the violation was made.
 
 ## Installation
 
