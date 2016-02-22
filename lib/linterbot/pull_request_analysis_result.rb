@@ -30,8 +30,12 @@ module Linterbot
       end
     end
 
+    def serious_violations_count
+      serious_violations.count
+    end
+
     def serious_violations?
-      serious_violations.count > 0
+      serious_violations_count > 0
     end
 
     private

@@ -12,8 +12,8 @@ module Linterbot
       github_client.create_status(repository, sha, "success", context: context, description: approve_description)
     end
 
-    def reject(repository, sha)
-      github_client.create_status(repository, sha, "failure", context: context, description: reject_description)
+    def reject(repository, sha, serious_violations_count)
+      github_client.create_status(repository, sha, "failure", context: context, description: reject_description(serious_violations_count))
     end
 
     def pending(repository, sha)
@@ -34,8 +34,8 @@ module Linterbot
         "The pull request passed the linter validations!"
       end
 
-      def reject_description
-        "There are linter violations that must be fixed!"
+      def reject_description(serious_violations_count)
+        "There are #{serious_violations_count} serious linter violations that must be fixed!"
       end
 
   end

@@ -17,7 +17,7 @@ module Linterbot
       result.comments.each { |comment| commenter.publish_comment(comment) }
       commenter.publish_summary(result.summary)
       if result.serious_violations?
-        reject_pull_request
+        reject_pull_request(result.serious_violations_count)
       else
         approve_pull_request
       end
