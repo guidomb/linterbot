@@ -4,6 +4,8 @@
 
 A bot that parses [SwiftLint](https://github.com/realm/SwiftLint) output and analyzes a GitHub pull request. Then for each linter violation it will make comment in the pull request diff on the line where the violation was made.
 
+![linterbot commenting on pull request](./docs/assets/linterbot-comment-pull-request.png)
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -22,18 +24,70 @@ Or install it yourself as:
 
 ## Usage
 
-Locally
+### Locally
+
+If you want to try it locally:
 
 ```
 swiftlint --reporter json | linterbot REPOSITORY PULL_REQUEST_NUMBER
 ```
 
-In TravisCI
+### TravisCI
+
+If you want to run it in TravisCI for every pull request triggered build you can create a script (with execution permission) called `linter` with the following content:
+
+```bash
+#!/bin/bash
+
+if [ "$TRAVIS_PULL_REQUEST" != "false" ]
+then
+  swiftlint --reporter json > switlint-report.json || false
+  linterbot $TRAVIS_REPO_SLUG $TRAVIS_PULL_REQUEST < swiftlint-report
+fi
+```
+*`|| false` avoids a build fail if there are severe lint error*
+
+Finally in your `.travis.yml` file:
+
+```yml
+language: objective-c
+osx_image: xcode7.2
+before_install:
+- gem install bundler
+- gem install linterbot
+- brew install swiftlint
+script:
+- linter
+- xcodebuild clean build test -project YourProject.xcodeproj -scheme YourProject
+```
+
+For more help run:
 
 ```
-swiftlint --reporter json | linterbot $TRAVIS_REPO_SLUG $TRAVIS_PULL_REQUEST
+linterbot -h
 ```
 
+and if you want to check all the available options for the `run` command (which is the default command to be run if none is provided) then run:
+
+```
+linterbot help run
+```
+
+### GitHub access
+
+In order for linterbot to be able to comment on your pull request it needs write access to the specified repository. You can provided an access token by either using the environmental variable `GITHUB_ACCESS_TOKEN` or using the `.linterbot.yml` (which should not be committed to your git repository).
+
+### Configuration file
+
+You can define some configuration parameters in configuration file. By default `linterbot` will try to load `.linterbot.yml` from the current working directory. You can change it using the `--config-file-path` option.
+
+The following are the supported parameters you can configure in the `.linterbot.yml` file:
+
+```yml
+github_access_token: 'YOUR_GITHUB_ACCESS_TOKEN'
+linter_report_file: 'PATH/TO/SWIFTLINT/JSON/OUTPUT/FILE'
+project_base_path: 'BASE/PROJECT/PATH'
+```
 
 ## Development
 
