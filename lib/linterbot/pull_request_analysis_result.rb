@@ -12,14 +12,22 @@ module Linterbot
       comments.empty?
     end
 
+    def violations?
+      comments.count > 0
+    end
+
     def violations_count
       comments.count
     end
 
     def summary
-      "Total linter violations in pull request: #{comments.count}\n" +
-      "Serious: #{serious_violations.count}\n" +
-      "Warnings: #{warning_violations.count}"
+      if violations?
+        "Total linter violations in pull request: #{comments.count}\n" +
+        "Serious: #{serious_violations.count}\n" +
+        "Warnings: #{warning_violations.count}"
+      else
+        ":+1: There are no linter violations."
+      end
     end
 
     def serious_violations?
