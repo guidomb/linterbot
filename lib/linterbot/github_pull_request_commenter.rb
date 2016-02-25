@@ -24,7 +24,11 @@ module Linterbot
     end
 
     def publish_summary(summary)
-      github_client.add_comment(repository, pull_request_number, summary)
+      if same_as_last_summary?(summary)
+        puts "Summary was not published because it's the same as the last result summary:\n #{summary}"
+      else
+        github_client.add_comment(repository, pull_request_number, summary)
+      end
     end
 
     private
@@ -42,17 +46,33 @@ module Linterbot
       end
 
       def comment_exist?(message)
-        existing_comments.find { |comment| comment.body == message && comment.user.id == bot_github_id }
+        existing_comments.find { |comment| same_comment?(comment, message) }
+      end
+
+      def existing_summaries
+        @existing_summaries ||= fetch_existing_comments("issue")
+      end
+
+      def latest_existing_comment
+        @latest_existing_comment ||= existing_summaries.sort { |a, b| b.created_at <=> a.created_at }.first
+      end
+
+      def same_as_last_summary?(summary)
+        latest_existing_comment && same_comment?(latest_existing_comment, summary)
+      end
+
+      def same_comment?(comment, message)
+        comment.body == message && comment.user.id == bot_github_id
       end
 
       def existing_comments
-        @existing_comments ||= fetch_existing_comments
+        @existing_comments ||= fetch_existing_comments("pull_request")
       end
 
-      def fetch_existing_comments
-        github_client.pull_request_comments(repository, pull_request_number).map do |comment|
+      def fetch_existing_comments(source)
+        github_client.send("#{source}_comments", repository, pull_request_number).map do |comment|
           user = OpenStruct.new(comment[:user].to_h)
-          OpenStruct.new(comment.to_h.merge(:user => user))
+          OpenStruct.new(comment.to_h.merge(user: user))
         end
       end
 
