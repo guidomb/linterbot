@@ -39,12 +39,13 @@ module Linterbot
       end
 
       def load_config_file(config_file_path)
-        if File.exist?(config_file_path)
-          config = YAML.load(File.read(config_file_path))
-          Hash[config.each.map { |key, value| [key.to_sym, value] }]
-        else
-          {}
-        end
+        return {} unless File.exist?(config_file_path)
+        file_content = File.read(config_file_path)
+        config = YAML.load(file_content)
+        # YAML.load retunrs false if file could not be parsed
+        # for example in the case of an empty file.
+        return {} unless config
+        Hash[config.each.map { |key, value| [key.to_sym, value] }]
       end
 
       def default_configuration
