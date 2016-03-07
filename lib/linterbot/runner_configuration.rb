@@ -44,8 +44,13 @@ module Linterbot
         config = YAML.load(file_content)
         # YAML.load retunrs false if file could not be parsed
         # for example in the case of an empty file.
-        return {} unless config
-        Hash[config.each.map { |key, value| [key.to_sym, value] }]
+        if config
+          Hash[config.each.map { |key, value| [key.to_sym, value] }]
+        else
+          STDERR.puts "WARNING: Linterbot configuration file '#{config_file_path}' " \
+                      "has been ignored because is not a valid YAML file."
+          return {}
+        end
       end
 
       def default_configuration

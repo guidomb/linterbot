@@ -41,7 +41,9 @@ command :run do |c|
     begin
       configuration = Linterbot::RunnerConfiguration.configuration!(options)
       runner = Linterbot::Runner.new(configuration)
+      puts "Running linterbot for '#{repository}##{pull_request_number}' ..."
       runner.run(repository, pull_request_number)
+      puts "Linterbot has successfully reviewed your PR ;-)"
     rescue Linterbot::RunnerConfiguration::MissingAttribute => exception
       STDERR.puts "Missing configuration attribute '#{exception.attribute_name}'"
       STDERR.puts "#{exception.fix_description}"
