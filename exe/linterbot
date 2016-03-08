@@ -46,7 +46,15 @@ command :run do |c|
       puts "Linterbot has successfully reviewed your PR ;-)"
     rescue Linterbot::RunnerConfiguration::MissingAttribute => exception
       STDERR.puts "Missing configuration attribute '#{exception.attribute_name}'"
-      STDERR.puts "#{exception.fix_description}"
+      STDERR.puts "#{exception.fix_description}\n"
+      exit 1
+    rescue Linterbot::RunnerConfiguration::InvalidGitHubCredentials => exception
+      STDERR.puts "Invalid GitHub credentials"
+      STDERR.puts "The given access token does not have the 'repo' scope"
+      STDERR.puts "\nFor more info on how to create an access token check:"
+      STDERR.puts "https://help.github.com/articles/creating-an-access-token-for-command-line-use/"
+      STDERR.puts "\nIf you want to know more about GitHub's OAuth scopes check:"
+      STDERR.puts "https://developer.github.com/v3/oauth/#scopes\n"
       exit 1
     end
   end

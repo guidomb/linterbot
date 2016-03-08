@@ -21,6 +21,9 @@ module Linterbot
 
     end
 
+    class InvalidGitHubCredentials < Exception
+    end
+
     DEFAULT_PROJECT_BASE_PATH = './'
     DEFAULT_CONFIG_FILE_PATH = './.linterbot.yml'
 
@@ -70,6 +73,7 @@ module Linterbot
         github_access_token = ENV["GITHUB_ACCESS_TOKEN"] || base_config[:github_access_token]
         raise missing_github_access_token unless github_access_token
         github_client = Octokit::Client.new(access_token: github_access_token)
+        validate_github_access!(github_client)
 
         configuration = new(github_client, base_config)
         configuration.project_base_path = options.project_base_path if options.project_base_path
@@ -81,6 +85,14 @@ module Linterbot
         end
 
         configuration
+      end
+
+      def validate_github_access!(github_client)
+        raise InvalidGitHubCredentials.new unless full_repo_access?(github_client)
+      end
+
+      def full_repo_access?(github_client)
+        github_client.scopes.include?("repo")
       end
 
     end
