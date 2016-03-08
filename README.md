@@ -42,7 +42,7 @@ If you want to run it in TravisCI for every pull request triggered build you can
 if [ "$TRAVIS_PULL_REQUEST" != "false" ]
 then
   swiftlint --reporter json > switlint-report.json || false
-  linterbot $TRAVIS_REPO_SLUG $TRAVIS_PULL_REQUEST < swiftlint-report
+  linterbot $TRAVIS_REPO_SLUG $TRAVIS_PULL_REQUEST < swiftlint-report.json
 fi
 ```
 *`|| false` avoids a build fail if there are severe lint error*
