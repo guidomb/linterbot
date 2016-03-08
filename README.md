@@ -75,7 +75,9 @@ linterbot help run
 
 ### GitHub access
 
-In order for linterbot to be able to comment on your pull request it needs write access to the specified repository. You can provided an access token by either using the environmental variable `GITHUB_ACCESS_TOKEN` or using the `.linterbot.yml` (which should not be committed to your git repository).
+In order for linterbot to be able to comment on your pull request it needs write access to the specified repository. Remember to add the `repo` scope when you create the GitHub access token. If you don't lintebot won't be able to run. For more information on how to create an access token check [this](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) tutorial. If you want to know more about GitHub's OAuth scopes check [this](https://developer.github.com/v3/oauth/#scopes) section in their documentation.
+
+You can provided an access token by either using the environmental variable `GITHUB_ACCESS_TOKEN` or using the `.linterbot.yml` (which should not be committed to your git repository).
 
 ### Configuration file
 
