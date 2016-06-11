@@ -37,7 +37,7 @@ module Linterbot
       end
 
       def new_file?
-        file.staus == "added"
+        file.status == "added"
       end
 
       def modified_file?
