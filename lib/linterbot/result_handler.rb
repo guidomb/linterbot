@@ -29,8 +29,8 @@ module Linterbot
         approver.approve(pull_request.repository, pull_request.newest_commit.sha)
       end
 
-      def reject_pull_request
-        approver.reject(pull_request.repository, pull_request.newest_commit.sha)
+      def reject_pull_request(serious_violations_count)
+        approver.reject(pull_request.repository, pull_request.newest_commit.sha, serious_violations_count)
       end
 
   end
