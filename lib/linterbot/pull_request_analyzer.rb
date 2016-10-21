@@ -36,9 +36,11 @@ module Linterbot
 
       def generate_comments(filename, hints)
         pull_request_file_patch = pull_request.patch_for_file(filename)
-        pull_request.commits_for_file(filename)
-          .map { |commit| CommentGenerator.new(filename, commit, pull_request_file_patch).generate_comments(hints) }
-          .flatten
+        commits = pull_request.commits_for_file(filename)
+        commits.map do |commit|
+          CommentGenerator.new(filename, commit, pull_request_file_patch, commits.length)
+            .generate_comments(hints)
+        end.flatten
       end
 
   end
