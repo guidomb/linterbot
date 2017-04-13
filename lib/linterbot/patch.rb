@@ -17,7 +17,9 @@ module Linterbot
     def additions_ranges
       chunks_headers.map do |diff_header, line_number|
         match = diff_header.match(MODIFIED_FILE_DIFF_REGEXP)
-        [match[1].to_i...match[2].to_i, line_number]
+        line_start = match[1].to_i
+        line_end = line_start + match[2].to_i
+        [line_start...line_end, line_number]
       end
     end
 
