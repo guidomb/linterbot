@@ -29,7 +29,7 @@ Or install it yourself as:
 If you want to try it locally:
 
 ```
-swiftlint --reporter json | linterbot REPOSITORY PULL_REQUEST_NUMBER
+swiftlint lint --reporter json | linterbot REPOSITORY PULL_REQUEST_NUMBER
 ```
 
 ### TravisCI

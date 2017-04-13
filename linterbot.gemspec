@@ -29,6 +29,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "pry-byebug", "~> 3.3.0"
 
-  spec.add_dependency "octokit", "~> 4.2.0"
-  spec.add_dependency "commander", "~> 4.3.8"
+  spec.add_dependency "octokit", "~> 4.2"
+  spec.add_dependency "commander", "~> 4.3"
 end

@@ -5,11 +5,13 @@ module Linterbot
     attr_accessor :filename
     attr_accessor :commit
     attr_accessor :pull_request_file_patch
+    attr_accessor :commits_count_for_file
 
-    def initialize(filename, commit, pull_request_file_patch)
+    def initialize(filename, commit, pull_request_file_patch, commits_count_for_file)
       @filename = filename
       @commit = commit
       @pull_request_file_patch = Patch.new(pull_request_file_patch)
+      @commits_count_for_file = commits_count_for_file
     end
 
     def generate_comments(hints)
@@ -18,10 +20,9 @@ module Linterbot
     end
 
     def generate_comment_for_hint(hint)
-      if new_file?
-        generate_comment_for_new_file_and_hint(hint)
-      elsif modified_file? && included_in_file_patch?(hint)
-        generate_comment_for_modified_file_and_hint(hint)
+      patch_line_number = comment_position_for_hint(hint)
+      if patch_line_number
+        Comment.new(sha: commit.sha, patch_line_number: patch_line_number, hint: hint)
       end
     end
 
@@ -59,13 +60,12 @@ module Linterbot
           .first
       end
 
-      def generate_comment_for_modified_file_and_hint(hint)
-        patch_line_number = pull_request_file_patch_line_number(hint)
-        Comment.new(sha: commit.sha, patch_line_number: patch_line_number, hint: hint)
-      end
-
-      def generate_comment_for_new_file_and_hint(hint)
-        Comment.new(sha: commit.sha, patch_line_number: hint.line, hint: hint)
+      def comment_position_for_hint(hint)
+        if new_file? && commits_count_for_file == 1
+          hint.line
+        elsif modified_file? && included_in_file_patch?(hint)
+          pull_request_file_patch_line_number(hint)
+        end
       end
 
   end
