@@ -7,7 +7,7 @@ module Linterbot
     attr_accessor :patch_content
 
     def initialize(patch_content)
-      @patch_content = patch_content
+      @patch_content = patch_content || ""
     end
 
     def chunks_headers
